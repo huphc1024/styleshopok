@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	<!-- Public - styleShop -->
+  <definition name="public.template" template="/WEB-INF/templates/public/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="left-bar" value="/WEB-INF/templates/public/left_bar.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+  </definition>
+  
+  <definition name="public.index.detail" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/detail.jsp" />
+  </definition>
+  
+  <definition name="public.index.cat" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/cat.jsp" />
+  </definition>
+  
+  <definition name="public.index.index" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/index.jsp" />
+  </definition>
+  
+  <definition name="public.index.lienhe" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/lienhe.jsp" />
+  </definition>
+  
+  <definition name="public.index.about" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/about.jsp" />
+  </definition>
+  
+   <definition name="public.index.product" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/product.jsp" />
+  </definition>
+  
+  <definition name="public.index.dangky" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/dangky.jsp" />
+  </definition>
+  
+  <definition name="public.index.login" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/login.jsp" />
+  </definition>
+  
+  <definition name="public.index.orders" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/orders.jsp" />
+  </definition>
+  
+  <definition name="public.index.account" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/account.jsp" />
+  </definition>
+  
+  <definition name="public.index.suadiachi" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/suadiachi.jsp" />
+  </definition>
+  
+  <definition name="public.index.nhantin" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/dangkynhantin.jsp" />
+  </definition>
+  
+  <definition name="public.index.listlike" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/danhsachthich.jsp" />
+  </definition>
+  
+  <definition name="public.index.lichsudathang" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/lichsudachang.jsp" />
+  </definition>
+  
+  <definition name="public.index.thanhtoanstep1" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thanhtoanstep1.jsp" />
+  </definition>
+  
+  <definition name="public.index.thanhtoankhach" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thanhtoankhach.jsp" />
+  </definition>
+  
+  <definition name="public.index.thanhtoanthanhcong" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thanhtoanthanhcong.jsp" />
+  </definition>
+  
+  <definition name="public.index.thanhtoanstep2" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thanhtoan.jsp" />
+  </definition>
+  
+  <definition name="public.index.thongtindiachi" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thongtindiachi.jsp" />
+  </definition>
+  
+  <definition name="public.index.thongtindonhang" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thongtindonhang.jsp" />
+  </definition>
+  
+  <definition name="public.index.thongtintaikhoan" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/thongtintaikhoan.jsp" />
+  </definition>
+  
+  <definition name="public.index.giohang" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/account/giohang.jsp" />
+  </definition>
+  
+    <definition name="public.index.error" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/error.jsp" />
+  </definition>
+  
+  <definition name="public.info.thongtingiaohang" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/info/thongtingiaohang.jsp" />
+  </definition>
+  
+   <definition name="public.info.chinhsachbaomat" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/info/chinhsachbaomat.jsp" />
+  </definition>
+  
+  <definition name="public.info.dieukhoan" extends="public.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/public/info/dieukhoan.jsp" />
+  </definition>
+     
+  <!-- Admin - styleShop -->
+  
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="left-bar" value="/WEB-INF/templates/admin/left-bar.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+   <definition name="admin.login" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/auth/login.jsp" />
+  </definition>
+  
+  <definition name="admin.403" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/auth/403.jsp" />
+  </definition>
+  
+  <definition name="admin.index.index" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/index/index.jsp" />
+  </definition>
+  
+  <definition name="admin.index.categories" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/categories.jsp" />
+  </definition>
+  
+  <definition name="admin.index.addcategories" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/addCat.jsp" />
+  </definition>
+  
+   <definition name="admin.index.editcategories" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/editCat.jsp" />
+  </definition>
+  
+  <definition name="admin.index.product" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/product.jsp" />
+  </definition>
+  
+  <definition name="admin.index.addproduct" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/addproduct.jsp" />
+  </definition>
+  
+  <definition name="admin.index.editproduct" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/editproduct.jsp" />
+  </definition>
+  
+  <definition name="admin.index.comment" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/comment.jsp" />
+  </definition>
+  
+  <definition name="admin.index.information" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/product/information.jsp" />
+  </definition>
+  
+  <definition name="admin.orders.orders" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/orders/orders.jsp" />
+  </definition>
+  
+  <definition name="admin.orders.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/orders/editorders.jsp" />
+  </definition>
+  
+  <definition name="admin.orders.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/orders/addordes.jsp" />
+  </definition>
+  
+  <definition name="admin.orders.info" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/orders/info.jsp" />
+  </definition>
+  
+  <definition name="admin.acc.customer" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/customer.jsp" />
+  </definition>
+  
+   <definition name="admin.acc.lienhe" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/lienhe.jsp" />
+  </definition>
+  
+  <definition name="admin.acc.customer.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/addcustomer.jsp" />
+  </definition>
+  
+  <definition name="admin.acc.user" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/user.jsp" />
+  </definition>
+  
+   <definition name="admin.acc.user.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/edituser.jsp" />
+  </definition>
+  
+   <definition name="admin.acc.user.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/adduser.jsp" />
+  </definition>
+  
+  <definition name="admin.acc.customer.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/AccountManagement/editcustomer.jsp" />
+  </definition>
+  
+  <definition name="admin.display.slider" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/display/slider.jsp" />
+  </definition>
+  
+  <definition name="admin.display.addslider" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/display/addslider.jsp" />
+  </definition>
+  
+  <definition name="admin.display.editslider" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/display/editslider.jsp" />
+  </definition>
+  
+  <definition name="admin.display.picture" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/display/album.jsp" />
+  </definition>
+  
+  <definition name="admin.display.editBanner" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/display/editBanner.jsp" />
+  </definition>
+  
+   <definition name="admin.display.addBanner" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/display/addBanner.jsp" />
+  </definition>
+  
+</tiles-definitions>

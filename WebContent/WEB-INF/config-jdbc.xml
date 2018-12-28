@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+		">
+	<bean id="myDataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+       <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+       <property name="url" value="jdbc:mysql://db4free.net:3306/styleshop?reconnect=true"/>
+       <property name="username" value="huphc1024"/>
+       <property name="password" value="hp010197"/>
+   </bean>
+	
+	 <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
+		<property name="dataSource" ref="myDataSource"></property>  
+	</bean>
+   
+</beans>
